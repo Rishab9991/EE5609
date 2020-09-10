@@ -14,7 +14,7 @@ A = np.array([[m.cos(x),m.sin(x)],[-m.sin(x),m.cos(x)]]) # Matrix A
 B = np.transpose(A) # Matrix B
 res = np.matmul(B,A) # Resultant Matrix 
 res = np.where(res<0, 0, res)
-print(res.astype(int))
+print(res)
 print("\n")
 print("The resultant matrix is an Identity Matrix.\nHence we can say that A'A = I for the given matrix A.")
 print("\n\n\n")
@@ -25,6 +25,6 @@ A = np.array([[m.sin(y),m.cos(y)],[-m.cos(y),m.sin(y)]]) # Matrix A
 B = np.transpose(A) # Matrix B
 res = np.matmul(B,A) # Resultant Matrix 
 res = np.where(res<0, 0, res)
-print(res.astype(int))
+print(res)
 print("\n")
 print("The resultant matrix is an Identity Matrix.\nHence we can say that A'A = I for the given matrix A.")
