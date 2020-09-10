@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\title{Assignment 1}
+\author{D V K M Rishab \\ \\ AI20MTECH14004}
+\date{}
+\begin{document}
+\let\vec\mathbf
+\maketitle
+\section*{Assignment 2}
+\subsection*{Problem 2.1}
+\textbf{Solution}:
+Given,
+\begin{align}
+A = \myvec{\cos{\alpha} && \sin{\alpha} \\ $-$\sin{\alpha} && \cos{\alpha}} \quad
+A^T = \myvec{\cos{\alpha} && $-$\sin{\alpha} \\ \sin{\alpha} && \cos{\alpha}}
+\end{align}
+We have to prove that $A^TA$ = I (Identity matrix) \\\\
+\textbf{LHS:}\quad
+\begin{align}
+A^TA = \myvec{\cos{\alpha} && $-$\sin{\alpha} \\ \sin{\alpha} && \cos{\alpha}} \myvec{\cos{\alpha} && \sin{\alpha} \\ $-$\sin{\alpha} && \cos{\alpha}}\\[1em]
+= \myvec{\cos^2{\alpha}+\sin^2{\alpha} && \cos{\alpha}\sin{\alpha}- \sin{\alpha}\cos{\alpha} \\ \sin{\alpha}\cos{\alpha}-\cos{\alpha}\sin{\alpha} && \sin^2{\alpha}+\cos^2{\alpha}}\\[1em]
+= \myvec{1 && 0\\0 && 1} \\[1em]
+= I
+\end{align}
+\textbf{RHS:}\quad
+\begin{align}
+I = \myvec{1 && 0\\0 && 1}
+\end{align}
+Therefore, \ \textbf{LHS} = \textbf{RHS} \ i.e. $A^T$A = I \\\\
+Hence Proved.
+\subsection*{Problem 2.2}
+\textbf{Solution}:
+Given,
+\begin{align}
+A = \myvec{\sin{\alpha} && \cos{\alpha} \\ $-$\cos{\alpha} && \sin{\alpha}} \quad
+A^T = \myvec{\sin{\alpha} && $-$\cos{\alpha} \\ \cos{\alpha} && \sin{\alpha}}
+\end{align}
+We have to prove that $A^TA$ = I (Identity matrix) \\\\
+\textbf{LHS:}\quad
+\begin{align}
+A^TA = \myvec{\sin{\alpha} && $-$\cos{\alpha} \\ \cos{\alpha} && \sin{\alpha}} \myvec{\sin{\alpha} && \cos{\alpha} \\ $-$\cos{\alpha} && \sin{\alpha}}\\[1em]
+= \myvec{\sin^2{\alpha}+\cos^2{\alpha} && \sin{\alpha}\cos{\alpha}- \cos{\alpha}\sin{\alpha} \\ \cos{\alpha}\sin{\alpha}-\sin{\alpha}\cos{\alpha} && \cos^2{\alpha}+\sin^2{\alpha}}\\[1em]
+= \myvec{1 && 0\\0 && 1} \\[1em]
+= I
+\end{align}
+\textbf{RHS:}\quad
+\begin{align}
+I = \myvec{1 && 0\\0 && 1}
+\end{align}
+Therefore, \ \textbf{LHS} = \textbf{RHS} \ i.e. $A^T$A = I \\\\
+Hence Proved.
+\end{document}
