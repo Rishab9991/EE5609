@@ -7,7 +7,7 @@ Created on Tue Sep 29 16:08:45 2020
 '''import matplotlib.pyplot as plt'''
 import math as m
 
-
+''' Different inputs are used in .tex and .py files'''
 a = [0,3]
 b = [0,0]  
 c = [3,-0.5]
@@ -22,7 +22,6 @@ d2 = round(distancebetn(b,c),2)
 d3 = round(distancebetn(c,d),2)
 d4 = round(distancebetn(d,a),2)
 
-print(d1,d2,d3,d4)
 
 '''Since AB and CD are the smallest and largest sides in the quadrilateral. If that condition holds true then the problem can be solved'''
 if(d1<d2 and d2<d4 and d4<d3): 
