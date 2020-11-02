@@ -12,6 +12,7 @@ def circ_gen(O,r):
 	x_circ = (x_circ.T + O).T
 	return x_circ
 
+#Function for Generating the Lines
 def line_dir_pt(m,A,k1,k2):
   len = 10
   dim = A.shape[0]
