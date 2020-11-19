@@ -47,7 +47,7 @@ for i, txt in enumerate(vert_labels):
     plt.annotate(txt, # this is the text
                  (tri_coords[0,i], tri_coords[1,i]), # this is the point to label
                  textcoords="offset points", # how to position the text
-                 xytext=(0,10), # distance from text to points (x,y)
+                 xytext=(2,5.5), # distance from text to points (x,y)
                  ha='center') # horizontal alignment can be left, right or center
 
 
