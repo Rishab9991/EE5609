@@ -17,13 +17,13 @@ def ellipse_gen(a,b):
 	x_ellipse[1,:] = b*np.sin(theta)
 	return x_ellipse
 
-#Setting up Plot
+#Setting up the Plot
 fig = plt.figure()
 ax = fig.add_subplot(111, aspect='equal')
 len = 100
 y = np.linspace(-5,5,len)
 
-#Ellipse parameters
+#Ellipse Parameters
 V = np.array(([2,-1],[-1,1]))
 u = np.array(([1,-1]))
 f = 0
@@ -45,16 +45,16 @@ xStandardEllipse = ellipse_gen(a,b)
 MajorStandard = np.array(([a,0]))
 MinorStandard = np.array(([0,b]))
 
-#Affine transform 
+#Affine Transform 
 xActualEllipse = P@xStandardEllipse + c1
 MajorActual = P@MajorStandard + c1[0]
 MinorActual = P@MinorStandard + c1[1]
 
 
-#Plotting the standard ellipse
+#Plotting the Standard Ellipse
 plt.plot(xStandardEllipse[0,:],xStandardEllipse[1,:],label='Standard Ellipse')
 
-#Plotting the actual ellipse
+#Plotting the Actual Ellipse
 plt.plot(xActualEllipse[0,:],xActualEllipse[1,:],label='Actual Ellipse')
 
 
