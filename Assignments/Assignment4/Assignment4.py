@@ -29,7 +29,7 @@ u = np.array(([1,-1]))
 f = 0
 c = -LA.inv(V)@u 
 o = [0,0]
-c1 = c[np.newaxis,:].T
+c1 = c[np.newaxis,:].T    #Center of Actual Ellipse used in Affine transformation
 
 #Eigenvalues and Eigenvectors
 D_vec,P = LA.eig(V)
